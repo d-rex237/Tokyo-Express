@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Booking Service</title>
+</head>
+<body>
+    <!--Navbar Starts-->
+    <div class="main-nav">
+        <h1>Tokyo Express</h1>
+        <ul class="navbar-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About Us/About.html">About</a></li>
+            <li><a href="svs.html/services.html">Services</a></li>
+            <li><a href="New folder/index.html">Contact</a></li>
+            <div class="btnnnn">
+               <a href="booking.html"> <button>BOOK NOW</button></a>
+            </div>
+            
+        </ul>
+<!--                <div class="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+        </div>-->
+    </div>
+    <div class="line"></div>
+</nav>
+
+<!--navbar Ends-->
+    <section class="bhead">
+        <div class="head1">
+            <div class="head">
+                <h1> Book Now</h1>
+            </div>
+            <div class="overlay2"></div>
+        </div>
+    </section>
+    <div class="toggle-buttons">
+        <button id="toggle1" class="toggle">Book a Ticket</button>
+        <button id="toggle2" class="toggle">Book a Hotel</button>
+        <button id="toggle3" class="toggle">Book a Flight</button>
+        <button id="toggle4" class="toggle">Book a Train</button>
+    </div>
+
+    <!--New section-->
+
+
+
+
+
+    
+    <section class="bform"> 
+        <div id="bform1" class="form-section">
+        <div class="wrapper" id="bform1">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <h1>Book A Bus Ticket Now</h1>
+                <input type="hidden" name="access_key" value="875baf36-bb81-493a-912f-404f2da85310">
+
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="Full Name" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                
+                <div class="input-field">
+                    <input type="email" placeholder="Enter Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-field">
+                    <input type="Phone" placeholder="Enter Phone Number" required>
+                    <i class='bx bx-phone' ></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter Location" required>
+                    <i class='bx bx-location-plus' ></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter Destination" required>
+                    <i class='bx bxs-institution'></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Agency Name" required>
+                    <i class='bx bx-home-heart'></i>
+                </div>
+                <div class="input-field">
+                    <input type="Date" placeholder="Enter Date" required>
+                    <i class='bx bxs-calendar'></i>
+                </div>
+
+                <div class="input-field">
+                    <input type="Number" placeholder="Enter Number of people" required>
+                    <i class='bx bxs-user-check'></i>
+                </div>
+                
+                <select id="priority" class="Dropdown">
+                    <option value="VIP Now">VIP Now: 2,000FCFA</option>
+                    <option value="VIP">VIP: 1,000FCFA</option>
+                    <option value="Custom">Custom: 500FCFA</option>
+                </select>
+                <div class="input-file">
+                    <input type="file" class="upload">
+                </div>
+            </div>
+            <label for=""><input type="checkbox" required> I here by declare that the above information provided is true and correct</label>
+            <button type="submit" class="btnn"> Book Now</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!--footer starts here-->
+    <!--New section-->
+        <div id="bform2" class="form-section">
+        <div class="wrapper" id="bform2">
+            <form action="">
+                <h1>Book A Hotel Now</h1>
+
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="Full Name" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                
+                <div class="input-field">
+                    <input type="email" placeholder="Enter Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-field">
+                    <input type="Phone" placeholder="Enter Phone Number" required>
+                    <i class='bx bx-phone' ></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter Location" required>
+                    <i class='bx bx-location-plus' ></i>
+                </div>
+                <div class="input-field">
+                    <input type="date" placeholder="Enter Date" required>
+                    <i class='bx bxs-calendar'></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="additional Information" required>
+                    <i class='bx bxs-calendar-minus'></i>
+                </div>
+                <div class="input-field">
+                    <input type="number" placeholder="Enter Number of people" required>
+                    <i class='bx bxs-user-check'></i>
+                </div>
+
+                <div class="input-field">
+                    <input type="Number" placeholder="Enter Number of Days" required>
+                    <i class='bx bxs-location-plus' ></i>
+                </div>
+                
+                <select id="priority" class="Dropdown">
+                    <option value="VIP Now">Single: 1,000FCFA</option>
+                    <option value="VIP">Studio: 2,000FCFA</option>
+                    <option value="Custom">Apartment: 5,000FCFA</option>
+                </select>
+                <div class="input-file">
+                    <input type="file" class="upload">
+                </div>
+            </div>
+            <label for=""><input type="checkbox" required> I here by declare that the above information provided is true and correct</label>
+            <button type="submit" class="btnn"> Register</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!--New section-->
+        <div id="bform3" class="form-section">
+        <div class="wrapper" id="bform3">
+            <form action="">
+                <h1>Book A Flight Ticket Now</h1>
+
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="Full Name" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                
+                <div class="input-field">
+                    <input type="email" placeholder="Enter Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-field">
+                    <input type="Phone" placeholder="Enter Phone Number" required>
+                    <i class='bx bx-phone' ></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter Location" required>
+                    <i class='bx bx-location-plus' ></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter Destination" required>
+                    <i class='bx bxs-institution'></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Description" required>
+                    <i class='bx bx-conversation'></i>
+                </div>
+                <div class="input-field">
+                    <input type="date" placeholder="Enter Date" required>
+                    <i class='bx bxs-calendar'></i>
+                </div>
+
+                <div class="input-field">
+                    <input type="Number" placeholder="Enter Number of people" required>
+                    <i class='bx bxs-user-check'></i>
+                </div>
+                
+                <select id="priority" class="Dropdown">
+                    <option value="Premium Economy">Premium Economy: 100,000FCFA</option>
+                    <option value="Economy">Economy: 50,000FCFA</option>
+                    <option value="Business">Business: 25,000FCFA</option>
+                    <option value="First Class">First Class: 15,000FCFA</option>
+                    <option value="Custom">Custom: 1,0000FCFA</option>
+                </select>
+                <div class="input-file">
+                    <input type="file" class="upload">
+                </div>
+                
+            </div>
+            <label for=""><input type="checkbox" required> I here by declare that the above information provided is true and correct</label>
+            <button type="submit" class="btnn"> Register</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--New section-->
+        <div id="bform4" class="form-section">
+        <div class="wrapper" id="bform4">
+            <form action="">
+                <h1>Book A Railway Ticket Now</h1>
+
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="Full Name" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                
+                <div class="input-field">
+                    <input type="email" placeholder="Enter Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-field">
+                    <input type="Phone" placeholder="Enter Phone Number" required>
+                    <i class='bx bx-phone' ></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter Location" required>
+                    <i class='bx bx-location-plus' ></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter Destination" required>
+                    <i class='bx bxs-institution'></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Description" required>
+                    <i class='bx bx-conversation'></i>
+                </div>
+                <div class="input-field">
+                    <input type="date" placeholder="Enter Date" required>
+                    <i class='bx bxs-calendar'></i>
+                </div>
+                <div class="input-field">
+                    <input type="Number" placeholder="Enter Number of People" required>
+                    <i class='bx bxs-user-check'></i>
+                </div>
+                
+                <select id="priority" class="Dropdown">
+                    <option value="Economy">Economy: 10,000FCFA</option>
+                    <option value="First class">First class: 5,000FCFA</option>
+                    <option value="Season">Season: 2,000FCFA</option>
+                </select>
+                <div class="input-file">
+                    <input type="file" class="upload">
+                </div>
+            </div>
+            <label for=""><input type="checkbox" required> I here by declare that the above information provided is true and correct</label>
+            <button type="submit" class="btnn"> Register</button>
+            </form>
+        </div>
+    </div> 
+</form>
+    </section>
+
+    <!--footer starts here-->
+
+    <section class="footer">
+        <div class="footer-content">
+            <h1>Tokyo Express</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="home-sci">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <h4>Links</h4>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About Us/About.html">About</a></li>
+            <li><a href="svs.html/services.html">Services</a></li>
+            <li><a href="New folder/index.html">Contact</a></li>
+        </div>
+        <div class="footer-content">
+            <h4>Compay</h4>
+            <li><a href="#">Business Hours</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Terms And Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </div>
+        <div class="footer-content">
+            <h4>Get To Us</h4>
+            <li><a href="#">Address:</a></li>
+            <li><a href="#">Email:</a></li>
+            <li><a href="#">Phone:</a></li>
+            <li><a href="#">Live Support</a></li>
+        </div>
+        <div class="footer-content">
+            <h4>Pricing</h4>
+            <li><a href="#">Bus </a></li>
+            <li><a href="#">Truck</a></li>
+            <li><a href="#">Train</a></li>
+            <li><a href="#">Plane</a></li>
+        </div>
+    </section>
+
+
+    <!--footer Ends here-->
+<script src="booking.js"></script>
+
+</body>
+</html>
