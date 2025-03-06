@@ -182,7 +182,7 @@ button:hover{
     background: aqua;
     border: 2px solid aqua;
     border-radius: 12px;
-    font-size: 19px;
+    font-size: 14px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: 600;
@@ -208,6 +208,7 @@ button:hover{
 .btn-box a:nth-child(2) {
     background: transparent;
     color: aqua;
+    font-size: 19px;
 }
 .btn-box a:nth-child(2):hover{
     color: black;
@@ -310,7 +311,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 50vh;
+    height: 60vh;
     @media (max-width: 600px) {
         height: 100vh;
     }
@@ -320,7 +321,7 @@ button:hover{
 
 .bx-container .box{
     width: 300px;
-    height: 310px;
+    height: 330px;
     border-radius: 30px;
     background: #646464;
     margin: 35px;
@@ -398,6 +399,7 @@ button:hover{
 .about-us{
     padding: 80px 0px;
     margin: 0;
+    margin-bottom: -90px;
     @media (max-width: 600px) {
         margin-top: 200px;
     }
@@ -471,14 +473,14 @@ button:hover{
 .about-us img {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 460px;
     margin: 0 auto;
     border-radius: 30px;
 }
 
 .about-us .abt-container .btn-box a{
     padding: 8px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
  /**image box ends here**/
  /**text image **/
@@ -495,7 +497,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     width: 100%;
     background: url(images/5.avif) no-repeat;
     background-size: cover;
@@ -513,7 +515,6 @@ button:hover{
     font-weight: 600;
     color: aqua;
     z-index: 1;
-    padding-left: 50px;
 }
 
 .ibox ul{
@@ -543,7 +544,8 @@ button:hover{
     display: flex;
     flex-direction: row;
     padding: 20px;
-    margin-top: 400px;
+    margin-top: 450px;
+    margin-bottom: 100px;
     @media (max-width: 600px) {
         flex-direction: column-reverse;
     }

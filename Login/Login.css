@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background: rgb(0, 37, 37);
+    color: white;
+}
+
+.main-nav{
+    background-color: rgb(73, 73, 73);
+    background: rgb(73, 73, 73);
+
+
+
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, .5) 0px 5px 15px;
+    z-index: 1000;
+}
+.main-nav h1{
+    color: white;
+    cursor: pointer;
+
+}
+.main-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 60%;
+    max-width: 40rem;
+    list-style: none;
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+   transition: .2s;
+}
+
+
+
+.main-nav ul li a:hover
+{
+    color: aqua;
+}
+
+button{
+    columns: white;
+    font-weight: 500;
+    background-color: aqua;
+    padding: .75rem 1rem;
+    border-radius: 10rem;
+    border: none;
+    transition: .2s ease-in-out;
+}
+button:hover{
+    background-color: rgb(0, 141, 141);
+    scale: .9;
+
+}
+.line{
+    width: 100%;
+    background-color: rgb(115, 115, 255);
+    height: .2rem;
+}
+.menu-btn{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .main-nav ul{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .menu-btn svg{
+        fill: white;
+        width: 2rem;
+        height: 3rem;
+
+    }
+}
+
+
+
+.Login-form-builder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.lwrapper{
+    position: relative;
+    width: 750px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid aqua;
+    box-shadow: 0 0 25px black;
+    overflow: hidden; 
+}
+
+
+.lwrapper .lform-box{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.lwrapper .lform-box.login{
+    left: 0;
+    padding: 0  60px 0 40px;
+}
+
+.lwrapper .lform-box.login .animation {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition: 0.7s ease;
+    transition-delay: calc(.1s * var(--j));
+}
+
+.lwrapper.active .lform-box.login .animation {
+    transform: translateX(-120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition-delay: calc(.1s * var(--i));
+}
+
+.lwrapper .lform-box.register{
+    right: 0;
+    
+    padding: 0 60px 0 40px;
+}
+
+
+.lwrapper .lform-box.register .animation{
+    transform: translateX(130%);
+    opacity: 0;
+    filter: blur(10px);
+    transition: 0.7s ease;
+    transition-delay: calc(.1s * var(--j));
+}
+
+.lwrapper.active .lform-box.register .animation{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: calc(.1s * var(--i));
+}
+
+.lform-box h2{
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+
+.lform-box .linput-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+}
+
+.linput-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    border-bottom: 2px solid #fff;
+    transition: .5s;
+}
+.linput-box input:focus,
+.linput-box input:valid{
+    border-bottom-color: aqua;
+}
+
+.linput-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    padding-right: 23px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.linput-box input:focus~label,
+.linput-box input:valid~label {
+    top: -5px;
+    color: aqua;
+}
+.linput-box i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #fff;
+    transition: .5s;
+}
+
+.linput-box input:focus~i,
+.linput-box input:valid~i{
+    color: aqua;
+}
+.lbtn{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid aqua;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.lform-box .logreg-link{
+    font-size: 14.5px;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0 10px;
+}
+
+.logreg-link p a{
+    color: aqua;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logreg-link p a:hover{
+    text-decoration: underline;
+}
+
+.lwrapper .linfo-text{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lwrapper .linfo-text.login{
+    right: 0;
+    text-align: right;
+    padding: 0 40px 60px 150px;
+}
+
+.lwrapper .linfo-text.login .animation {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition: 0.7s ease;
+    transition-delay: calc(.1s * var(--j));
+}
+
+.lwrapper.active .linfo-text.login .animation {
+    transform: translateX(120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition-delay: calc(.1s * var(--i));
+}
+
+
+
+
+
+.lwrapper .linfo-text.register{
+    left: 0;
+    text-align: left;
+    padding: 0 150px 60px 40px;
+    pointer-events: none;
+}
+
+.lwrapper .linfo-text.register .animation{
+    transform: translateX(-120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition: 0.7s ease;
+    transition-delay: calc(.1s * var(--j));
+}
+
+.lwrapper.active .linfo-text.register .animation{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: calc(.1s * var(--i));
+}
+
+.linfo-text h2{
+    font-size: 32px;
+    color: #fff;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.linfo-text p{
+    font-size: 16px;
+    color: #fff;
+}
+
+.lwrapper .big-animate{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 850px;
+    height: 600px;
+    background: linear-gradient(45deg, black, aqua);
+    border-bottom: 3px solid rgb(0, 71, 71);
+    transform: rotate(10deg) skewY(40deg);
+    transform-origin: bottom right;
+    transition: 1.5s ease;
+    transition-delay: 1.6s;
+}
+.lwrapper.active .big-animate{
+    transform: rotate(0) skewY(0);
+    transition-delay: .5s;
+}
+.lwrapper .big-animate2{
+    position: absolute;
+    top: 100%;
+    left: 250px;
+    width: 850px;
+    height: 700px;
+    background: rgb(0, 22, 22);
+    transform: rotate(0) skewY(0);
+    border-top: 3px solid rgb(0, 71, 71);
+    transform-origin: bottom left;
+    transition: 1.5s ease;
+    transition-delay: .5s;
+}
+
+.lwrapper.active .big-animate2{
+    transform: rotate(-11deg) skewY(-41deg);
+    transition-delay: 1.2s ;
+}
