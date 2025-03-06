@@ -217,11 +217,13 @@ button:hover{
     font-size: 32px;
     font-weight: 600;
     color: aqua;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .ab-content p, p1{
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .image-abbox {
