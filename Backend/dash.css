@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    background: rgb(153, 153, 153);
+}
+.sidebar{
+    position: sticky;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: white;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgb(2, 138, 138);
+
+}
+
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all .5s ease-in-out;
+}
+
+.menu li:hover, .activee{
+    background: rgb(20, 201, 201);
+    width: 200px;
+}
+
+.menu a{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a i{
+    font-size: 1.2rem;
+}
+
+.logout {
+    position: absolute;
+    bottom: 100;
+    left: 0;
+    width: 100%;
+}
+
+
+
+/* Main--content starts now */
+.main--content{
+    position: relative;
+    background: #e2e2e2;
+    width: 100%;
+    padding: 1rem;
+}
+
+
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #797979;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header--title{
+    color: rgb(255, 255, 255);
+}
+.user--info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search--box{
+    background: #eeeded;
+    border-radius: 15px;
+    color: aqua;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 12px;
+}
+
+.search--box input{
+    background: transparent;
+    padding: 10px;
+}
+.search--box i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.search--box i:hover{
+    transform: scale(1.2);
+}
+
+/* Card-CONTENT */
+.card--container{
+    background: #797979;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.card--wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+.main-title{
+    color: aqua;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.payment--card{
+    background: #cecece;
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 290px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .5s ease-in-out;
+}
+
+.payment--card:hover{
+    transform: translateY(-5px);
+}
+.card--header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.amount{
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+}
+
+.amount--value{
+    font-size: 24px;
+    font-family: "courier new", courier, monospace;
+    font-weight: 600;
+}
+.icon{
+    color: aqua;
+    padding: 1rem;
+    height: 1rem;
+    width: 60px;
+    text-align: center;
+    border-radius: 80%;
+    font-size: 1.5rem;
+    background: transparent;
+
+}
+
+.card-details{
+    font-synthesis: 18px;
+    padding-top: 52px;
+    color: #777777;
+    letter-spacing: 2px;
+    font-family: "courier new", courier, monospace;
+}
+
+/* color css */
+.aqua{
+    background: aqua;
+}
+.light-red{
+    background: #fac4c4;
+}
+.light-purple{
+    background: rgb(207, 249, 255);
+}
+
+.light-green{
+    background: #c8ffd2;
+}
+
+.light-blue{
+    background: #d0d4ff;
+}
+.fark-purple{
+    background: purple;
+}
+.dark-red{
+    background: #ff0000;
+}
+
+.dark-greem{
+    background: green;
+}
+
+.dark-blue{
+    background:blue;
+}
+
+/* card content ends */
+
+
+/* Tabular wrapper section starts */
+.tabular-wrapper{
+    background: #797979;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+thead{
+    background: aqua;
+    color: white;
+}
+
+th{
+    padding: 15px;
+    text-align: left;
+}
+
+
+tbody{
+    background: #b8b8b8;
+}
+
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+tr:nth-child(even){
+    background: #e9e9e9;
+}
+
+tfoot{
+    background: aqua;
+    font-weight: bold;
+    color: #fff;
+}
+
+tfoot td{
+    padding: 15px;
+
+}
+
+.table-container button{
+    color: rgb(0, 185, 0);
+    background: none;
+    cursor: pointer;
+}
+
+
+
+.status{
+    background-color: rgb(79, 79, 253);
+    color: #fff;
+    font-weight: 600;
+}
+
+.status-done{
+    background-color: rgb(0, 255, 0);
+    font-weight: 600;
+    color: white;
+}
+/* Tabular wrapper section ends */
+/* Main--content ends now */
+
