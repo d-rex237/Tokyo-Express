@@ -1,10 +1,37 @@
+ <?php
+include "connect.php";
+
+if(!isset($_SESSION['user'])){
+    header("location: dash.php");
+}
+$email = $_SESSION['user'];
+echo "email";
+
+
+
+$sql = "SELECT * FROM USERS WHERE email = '$email'";
+$results = $conn->query($sql);
+$user = $result->fetch_assoc();
+$name = $user["username"];
+echo "$name";
+
+$conn->closed();
+
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="style.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -19,7 +46,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="profile.html">
                         <i class='bx bxs-user'></i>
                         <span>Profile</span>
                     </a>
@@ -49,7 +76,7 @@
                     </a>
                 </li>
                 <li class="logout">
-                    <a href="">
+                    <a href="logout.php">
                         <i class='bx bxs-dashboard'></i>
                         <span>Logout</span>
                     </a>

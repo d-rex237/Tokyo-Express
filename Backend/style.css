@@ -303,16 +303,193 @@ tfoot td{
 
 
 .status{
-    background-color: rgb(79, 79, 253);
+    background-color: rgb(0, 0, 255);
     color: #fff;
     font-weight: 600;
 }
 
 .status-done{
-    background-color: rgb(0, 255, 0);
+    background-color: rgb(0, 131, 0);
     font-weight: 600;
     color: white;
 }
 /* Tabular wrapper section ends */
 /* Main--content ends now */
+
+
+/* Profile Starts */
+
+
+/* Profile Area starts */
+.profile-area img{
+
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.profile-area{
+    width: 40%;
+    background: rgb(131, 173, 173);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.profile-area h3{
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.profile-area h3 a{
+    font-size: 24px;
+    text-decoration: none;
+    color: red;
+}
+
+.profile-row{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem
+    ;
+}
+
+.profile-container{
+    gap: 2rem;
+}
+.boxes{
+    background: rgb(255, 136, 0);
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 20px;
+    align-items: start;
+    justify-content: center;
+}
+
+.boxes-images img{
+    width: 100%;
+    height: 180px;
+    border-radius: 25px;
+}
+
+.boxes h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.boxes p{
+    font-size: 16px;
+    color: #000000;
+}
+
+.boxes .box1{
+    background: rgb(49, 0, 0);
+    padding: 24px;
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.boxes .box1 span{
+    font-size: 18px;
+    color: #fff;
+}
+
+.boxes .box1 span a{
+    font-size: 18px;
+    color: #0066ff;
+    text-decoration: none;
+}
+
+
+
+
+.boxes .box2{
+    background: rgb(16, 0, 54);
+    padding: 24px;
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 15px;
+}
+.boxes .box2 span{
+    font-size: 18px;
+    color: #fff;
+}
+
+.boxes .box2 span a{
+    font-size: 18px;
+    color: #00ff15;
+    text-decoration: none;
+}
+/* friend box */
+.friend-image img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.friend-box{
+    background: rgb(241, 138, 155);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 20px;
+    align-items: start;
+    justify-content: center;
+}
+
+.header-text h3{
+    font-size: 32px;
+    color: rgb(0, 44, 44);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.friend-row{
+    width: 200%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-image img{
+    width: 300px;
+    border-radius: 30px;
+
+}
+.friend-cul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.friend-row button{
+    font-size: 14px;
+    padding: 10px;
+    background: rgb(2, 94, 94);
+    color: #fff;
+    border-radius: 15px;
+    transition: .5s ease;
+}
+.friend-row button:hover{
+    scale: 1.2;
+}
+
+
+
+/* Profile Area ends */
+
+/* Profile Ends */
 
