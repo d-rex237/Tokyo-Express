@@ -1,26 +1,4 @@
- <?php
-include "connect.php";
 
-if(!isset($_SESSION['user'])){
-    header("location: dash.php");
-}
-$email = $_SESSION['user'];
-echo "email";
-
-
-
-$sql = "SELECT * FROM USERS WHERE email = '$email'";
-$results = $conn->query($sql);
-$user = $result->fetch_assoc();
-$name = $user["username"];
-echo "$name";
-
-$conn->closed();
-
-
-
-
-?>
 
 
 
